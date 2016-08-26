@@ -1,0 +1,56 @@
+* {
+    font-family: sans-serif;
+    background-color: #159;
+    background-image: url(judo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+
+html {
+    padding: 30px;
+}
+
+body {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 60px #000;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px 0 0 0;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 1000px;
+    margin: 0px auto;
+    border: 1px solid #555;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #000;
+    background-color: #aac;
+}
+
+td {
+    border: 1px solid #666;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    background-color: #ccf;
+}
+
+td:first-child {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+td:last-child {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
