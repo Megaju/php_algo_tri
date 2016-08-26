@@ -1,19 +1,24 @@
 <link rel="stylesheet" href="style.css">
+<style>*{background-image: url(img/requincheval.jpg);}</style>
 
 <?php
-    $tri = array(10, 9, 7, 4, 5, 3, 7, 6, 12, 0);
+    $triBulle = array(10, 9, 7, 4, 5, 3, 7, 6, 12, 0);
 
-    $triLength = count($tri)-1;
+    $triBulleLength = count($triBulle)-1;
 
-    for($i = 0; $i <= $triLength; $i++) {
-        for($j = $triLength-1; $j >= $i; $j--) {
-            if($tri[$j] > $tri[$j+1]) {
-                $temp = $tri[$j+1];
-                $tri[$j+1] = $tri[$j];
-                $tri[$j] = $temp;
+    for($i = 0; $i <= $triBulleLength; $i++) {
+        for($j = $triBulleLength-1; $j >= $i; $j--) {
+            if($triBulle[$j] > $triBulle[$j+1]) {
+                $temp = $triBulle[$j+1];
+                $triBulle[$j+1] = $triBulle[$j];
+                $triBulle[$j] = $temp;
             }
         }
     }
+?>
+ 
+<?php
+    $triInsert = array(1, 2, 4, 3);
 ?>
   
 <?php include('content.php'); ?>
